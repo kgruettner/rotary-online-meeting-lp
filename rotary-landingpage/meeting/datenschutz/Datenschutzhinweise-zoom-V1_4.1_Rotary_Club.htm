@@ -1,0 +1,541 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 6 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+h1
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:14.0pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+h2
+	{mso-style-link:"Überschrift 2 Zchn";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:14.0pt;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;
+	text-decoration:underline;}
+h3
+	{mso-style-link:"Überschrift 3 Zchn";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:14.0pt;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+h4
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:14.0pt;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;
+	font-weight:normal;
+	font-style:italic;}
+h5
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:14.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;
+	font-weight:normal;}
+h6
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:14.0pt;
+	page-break-after:avoid;
+	font-size:9.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;
+	font-weight:normal;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Kommentartext Zchn";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+strong
+	{font-family:"Arial",sans-serif;}
+em
+	{font-family:"Arial",sans-serif;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Kommentarthema Zchn";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Sprechblasentext Zchn";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+p.Trenner, li.Trenner, div.Trenner
+	{mso-style-name:Trenner;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+p.Codeblock, li.Codeblock, div.Codeblock
+	{mso-style-name:Codeblock;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Courier;
+	color:black;}
+p.NummerierteAufzhlung, li.NummerierteAufzhlung, div.NummerierteAufzhlung
+	{mso-style-name:"Nummerierte Aufzählung";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+p.Blockquote, li.Blockquote, div.Blockquote
+	{mso-style-name:Blockquote;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;
+	font-style:italic;}
+p.Kommentar-Block, li.Kommentar-Block, div.Kommentar-Block
+	{mso-style-name:Kommentar-Block;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+p.AuszufhrenderCode-Block, li.AuszufhrenderCode-Block, div.AuszufhrenderCode-Block
+	{mso-style-name:"Auszuführender Code-Block";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+p.Aufzhlung, li.Aufzhlung, div.Aufzhlung
+	{mso-style-name:Aufzählung;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+span.Anmerkung
+	{mso-style-name:Anmerkung;}
+span.Tag
+	{mso-style-name:Tag;}
+span.Mark
+	{mso-style-name:Mark;}
+span.Link
+	{mso-style-name:Link;}
+span.AuszufhrenderCode
+	{mso-style-name:"Auszuführender Code";}
+span.InlineCode
+	{mso-style-name:"Inline Code";
+	font-family:Courier;}
+span.Kommentar
+	{mso-style-name:Kommentar;}
+span.InlineCite
+	{mso-style-name:"Inline Cite";
+	font-family:"Arial",sans-serif;
+	font-style:italic;}
+span.KommentartextZchn
+	{mso-style-name:"Kommentartext Zchn";
+	mso-style-link:Kommentartext;}
+span.KommentarthemaZchn
+	{mso-style-name:"Kommentarthema Zchn";
+	mso-style-link:Kommentarthema;
+	font-weight:bold;}
+span.SprechblasentextZchn
+	{mso-style-name:"Sprechblasentext Zchn";
+	mso-style-link:Sprechblasentext;
+	font-family:"Times New Roman",serif;}
+span.berschrift3Zchn
+	{mso-style-name:"Überschrift 3 Zchn";
+	mso-style-link:"Überschrift 3";
+	font-weight:bold;}
+span.berschrift2Zchn
+	{mso-style-name:"Überschrift 2 Zchn";
+	mso-style-link:"Überschrift 2";
+	font-weight:bold;
+	text-decoration:underline;}
+span.ms-rodlstyle-primarytextintroduction
+	{mso-style-name:ms-rodlstyle-primarytextintroduction;}
+.MsoChpDefault
+	{font-family:"Arial",sans-serif;
+	color:black;}
+.MsoPapDefault
+	{line-height:13.0pt;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.25pt 841.85pt;
+	margin:72.0pt 89.85pt 72.0pt 89.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<h1 style='margin-top:24.0pt'><a name="OLE_LINK4"></a><a name="OLE_LINK3"><span
+lang=DE>Datenschutzhinweise für Online-Meetings, Telefonkonferenzen und
+Webinare via „Zoom“ </span></a><span lang=DE>des <span style='background:yellow'>&lt;Rotary
+Club Name&gt;</span></span></h1>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Wir möchten Sie nachfolgend über die
+Verarbeitung personenbezogener Daten im Zusammenhang mit der Nutzung von <b>„Zoom“</b>
+informieren.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<h2><span lang=DE>Zweck der Verarbeitung</span></h2>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Wir nutzen das Tool „Zoom“, um
+Telefonkonferenzen, Online-Meetings, Videokonferenzen und/oder Webinare
+durchzuführen (nachfolgend: „Online-Meetings“). „Zoom“ ist ein Service der Zoom
+Video Communications, Inc., die ihren Sitz in den USA hat.</span></p>
+
+<p class=MsoNormal><b><span lang=DE>&nbsp;</span></b></p>
+
+<h2 style='margin-top:10.0pt'><span lang=DE>Verantwortlicher</span></h2>
+
+<p class=MsoNormal><strong><span lang=DE>&nbsp;</span></strong></p>
+
+<p class=MsoNormal><strong><span lang=DE>Verantwortlicher</span></strong><span
+lang=DE> für Datenverarbeitung, die im unmittelbaren Zusammenhang mit der
+Durchführung von „Online-Meetings“ steht, ist der Rotary E-Club of D-1850,
+vertreten durch seinen Präsidenten <span style='background:yellow'>&lt;Name des
+Präsidenten&gt;</span> (<span class=MsoHyperlink><span style='background:yellow'><a
+href="mailto:praesident@clubname.de">praesident@clubname.de</a></span></span>).</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=DE>Hinweis:</span></b><span lang=DE> Soweit Sie
+die Internetseite von „Zoom“ aufrufen, ist der Anbieter von „Zoom“ für die Datenverarbeitung
+verantwortlich. Ein Aufruf der Internetseite ist für die Nutzung von „Zoom“
+jedoch nur erforderlich, um sich die Software für die Nutzung von „Zoom“
+herunterzuladen.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Sie können „Zoom“ auch nutzen, wenn Sie die
+jeweilige Meeting-ID und ggf. weitere Zugangsdaten zum Meeting direkt in der
+„Zoom“-App eingeben.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Wenn Sie die „Zoom“-App nicht nutzen wollen
+oder können, dann sind die Basisfunktionen auch über eine Browser-Version
+nutzbar, die Sie ebenfalls auf der Website von „Zoom“ finden.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<h2 style='margin-top:10.0pt'><span lang=DE>Welche Daten werden verarbeitet?</span></h2>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Bei der Nutzung von „Zoom“ werden verschiedene
+Datenarten verarbeitet. Der Umfang der Daten hängt dabei auch davon ab, welche Angaben
+zu Daten Sie vor bzw. bei der Teilnahme an einem „Online-Meeting“ machen.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Folgende personenbezogene Daten sind
+Gegenstand der Verarbeitung:</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=DE>Angaben zum Benutzer: </span></b><span
+lang=DE>Vorname, Nachname, Telefon (optional), E-Mail-Adresse, Passwort (wenn „Single-Sign-On“
+nicht verwendet wird), Profilbild (optional),</span></p>
+
+<p class=MsoNormal><span lang=DE>Abteilung (optional)</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=DE>Meeting-Metadaten:</span></b><span lang=DE>
+Thema, Beschreibung (optional), Teilnehmer-IP-Adressen,
+Geräte-/Hardware-Informationen</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=DE>Bei Aufzeichnungen (optional):</span></b><span
+lang=DE> MP4-Datei aller Video-, Audio- und Präsentationsaufnahmen, M4A-Datei
+aller Audioaufnahmen, Textdatei des Online-Meeting-Chats.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=DE>Bei Einwahl mit dem Telefon:</span></b><span
+lang=DE> Angabe zur eingehenden und ausgehenden Rufnummer, Ländername, Start-
+und Endzeit. Ggf. können weitere Verbindungsdaten wie z.B. die IP-Adresse des
+Geräts gespeichert werden.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=DE>Text-, Audio- und Videodaten: </span></b><span
+lang=DE>Sie haben ggf. die Möglichkeit, in einem „Online-Meeting“ die Chat-,
+Fragen- oder Umfragefunktionen zu nutzen. Insoweit werden die von Ihnen
+gemachten Texteingaben verarbeitet, um diese im „Online-Meeting“ anzuzeigen und
+ggf. zu protokollieren. Um die Anzeige von Video und die Wiedergabe von Audio
+zu ermöglichen, werden entsprechend während der Dauer des Meetings die Daten
+vom Mikrofon Ihres Endgeräts sowie von einer etwaigen Videokamera des Endgeräts
+verarbeitet. Sie können die Kamera oder das Mikrofon jederzeit selbst über die
+„Zoom“-Applikationen abschalten bzw. stummstellen.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Um an einem „Online-Meeting“ teilzunehmen bzw.
+den „Meeting-Raum“ zu betreten, müssen Sie zumindest Angaben zu Ihrem Namen
+machen.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<h2><span lang=DE>Umfang der Verarbeitung</span></h2>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Wir verwenden „Zoom“, um „Online-Meetings“
+durchzuführen. Wenn wir „Online-Meetings“ aufzeichnen wollen, werden wir Ihnen
+das im Vorwege transparent mitteilen und – soweit erforderlich – um eine
+Zustimmung bitten. Die Tatsache der Aufzeichnung wird Ihnen zudem in der
+„Zoom“-App angezeigt.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Wenn es für die Zwecke der Protokollierung von
+Ergebnissen eines Online-Meetings erforderlich ist, werden wir die Chatinhalte
+protokollieren. Das wird jedoch in der Regel nicht der Fall sein.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Im Falle von Webinaren können wir für Zwecke
+der Aufzeichnung und Nachbereitung von Webinaren auch die gestellten Fragen von
+Webinar-Teilnehmenden verarbeiten.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Wenn Sie bei „Zoom“ als Benutzer registriert
+sind, dann können Berichte über „Online-Meetings“ (Meeting-Metadaten, Daten zur
+Telefoneinwahl, Fragen und Antworten in Webinaren, Umfragefunktion in
+Webinaren) bis zu einem Monat bei „Zoom“ gespeichert werden.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Die in „Online-Meeting“-Tools wie „Zoom”
+bestehende Möglichkeit einer softwareseitigen „Aufmerksamkeitsüberwachung“
+(„Aufmerksamkeitstracking“) ist <b>deaktiviert.</b></span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>„Zoom“ bietet außerdem die Funktion von
+privaten Chatnachrichten an. Diese Funktion haben wir <b>deaktiviert</b> um
+eine mögliche Aufzeichnung von privater Kommunikation zwischen
+Meetingteilnehmern zu verhindern.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Eine automatisierte Entscheidungsfindung
+i.S.d. Art. 22 DSGVO kommt nicht zum Einsatz.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<h2><span lang=DE>Rechtsgrundlagen der Datenverarbeitung</span></h2>
+
+<p class=MsoNormal style='margin-top:10.0pt'><span lang=DE>Soweit personenbezogene
+Daten von Mitgliedern des <span style='background:yellow'>&lt;Rotary Club
+Name&gt;</span> verarbeitet werden, ist Art. 6 Abs. 1 lit. f) DSGVO die Rechtsgrundlage
+für die Datenverarbeitung. Unser Interesse besteht in diesen Fällen an der
+effektiven Durchführung von „Online-Meetings“.</span></p>
+
+<p class=MsoNormal style='margin-top:10.0pt'><span lang=DE>Im Übrigen ist die Rechtsgrundlage
+für die Datenverarbeitung bei der Durchführung von „Online-Meetings“ Art. 6
+Abs. 1 lit. b) DSGVO, soweit die Meetings im Rahmen von Vertragsbeziehungen
+durchgeführt werden.</span></p>
+
+<p class=MsoNormal style='margin-top:10.0pt'><span lang=DE>Sollte keine
+vertragliche Beziehung bestehen, ist die Rechtsgrundlage Art. 6 Abs. 1 lit. f)
+DSGVO. Auch hier besteht unser Interesse an der effektiven Durchführung von
+„Online-Meetings“.</span></p>
+
+<p class=MsoNormal style='margin-top:10.0pt'><span lang=DE>&nbsp;</span></p>
+
+<h2 style='margin-top:10.0pt'><span lang=DE>Empfänger / Weitergabe von Daten</span></h2>
+
+<p class=MsoNormal style='margin-top:10.0pt'><span lang=DE>Personenbezogene
+Daten, die im Zusammenhang mit der Teilnahme an „Online-Meetings“ verarbeitet
+werden, werden grundsätzlich nicht an Dritte weitergegeben, sofern sie nicht
+gerade zur Weitergabe bestimmt sind. Beachten Sie bitte, dass Inhalte aus
+„Online-Meetings“ wie auch bei persönlichen Besprechungstreffen häufig gerade
+dazu dienen, um Informationen mit Interessenten oder Dritten zu kommunizieren
+und damit zur Weitergabe bestimmt sind.</span></p>
+
+<p class=MsoNormal style='margin-top:10.0pt'><span lang=DE>Weitere Empfänger: Der
+Anbieter von „Zoom“ erhält notwendigerweise Kenntnis von den o.g. Daten, soweit
+dies im Rahmen unseres Auftragsverarbeitungsvertrages mit „Zoom“ vorgesehen
+ist.</span></p>
+
+<p class=MsoNormal style='margin-top:10.0pt'><span lang=DE>&nbsp;</span></p>
+
+<h2 style='margin-top:10.0pt'><span lang=DE>Datenverarbeitung außerhalb der
+Europäischen Union</span></h2>
+
+<p class=MsoNormal style='margin-top:10.0pt'><span lang=DE>„Zoom“ ist ein
+Dienst, der von einem Anbieter aus den USA erbracht wird. Eine Verarbeitung der
+personenbezogenen Daten findet damit auch in einem Drittland statt. Wir haben
+mit dem Anbieter von „Zoom“ einen Auftragsverarbeitungsvertrag geschlossen, der
+den Anforderungen von Art. 28 DSGVO entspricht.</span></p>
+
+<p class=MsoNormal style='margin-top:10.0pt'><span lang=DE>Ein angemessenes
+Datenschutzniveau ist zum einen durch die „Privacy Shield“-Zertifizierung der Zoom
+Video Communications, Inc., zum anderen aber auch durch den Abschluss der sog. EU-Standardvertragsklauseln
+garantiert.</span></p>
+
+<p class=MsoNormal style='margin-top:10.0pt'><span lang=DE>&nbsp;</span></p>
+
+<h2 style='margin-top:10.0pt'><span lang=DE>Datenschutzbeauftragter</span></h2>
+
+<p class=MsoNormal style='margin-top:10.0pt'><span lang=DE>Wir haben einen Datenschutzbeauftragten
+benannt.</span></p>
+
+<p class=MsoNormal style='margin-top:10.0pt'><span lang=DE>Sie erreichen diesen
+wie folgt: <span style='background:yellow'>&lt;Name des Datenschutzbeauftragten&gt;</span>,
+Datenschutzbeauftragter des <span style='background:yellow'>&lt;Rotary Club
+Name&gt;</span>, E-Mail: <span class=MsoHyperlink><span style='background:yellow'><a
+href="mailto:datenschutz@rotary-club.de">datenschutz@rotary-club.de</a></span></span>
+</span></p>
+
+<p class=MsoNormal style='margin-top:10.0pt'><span lang=DE>&nbsp;</span></p>
+
+<h2 style='margin-top:10.0pt'><span lang=DE>Ihre Rechte als Betroffene/r</span></h2>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Sie haben das Recht auf <strong>Auskunft</strong>
+über die Sie betreffenden personenbezogenen Daten. Sie können sich für eine
+Auskunft jederzeit an uns wenden. </span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Bei einer Auskunftsanfrage, die nicht
+schriftlich erfolgt, bitten wir um Verständnis dafür, dass wir ggf. Nachweise
+von Ihnen verlangen, die belegen, dass Sie die Person sind, für die Sie sich
+ausgeben. </span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Ferner haben Sie ein Recht auf <strong>Berichtigung</strong>
+oder <strong>Löschung</strong> oder auf <strong>Einschränkung</strong> der
+Verarbeitung, soweit Ihnen dies gesetzlich zusteht.</span></p>
+
+<p class=MsoNormal><span lang=DE>Schließlich haben Sie ein <strong>Widerspruchsrecht</strong>
+gegen die Verarbeitung im Rahmen der gesetzlichen Vorgaben.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Ein Recht auf <b>Datenübertragbarkeit</b>
+besteht ebenfalls im Rahmen der datenschutzrechtlichen Vorgaben.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<h2 style='margin-top:10.0pt'><a name="OLE_LINK47"></a><a name="OLE_LINK46"><span
+lang=DE>Löschung von Daten</span></a></h2>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Wir löschen personenbezogene Daten
+grundsätzlich dann, wenn kein Erfordernis für eine weitere Speicherung besteht.
+Ein Erfordernis kann insbesondere dann bestehen, wenn die Daten noch benötigt
+werden, um vertragliche Leistungen zur erfüllen, Gewährleistungs- und ggf.
+Garantieansprüche prüfen und gewähren oder abwehren zu können. Im Falle von
+gesetzlichen Aufbewahrungspflichten kommt eine Löschung erst nach Ablauf der
+jeweiligen Aufbewahrungspflicht in Betracht.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<h2 style='margin-top:10.0pt'><span lang=DE>Beschwerderecht bei einer
+Aufsichtsbehörde</span></h2>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=DE>Sie haben das Recht, sich über die
+Verarbeitung personenbezogenen Daten durch </span><span lang=DE>uns bei einer <strong>Aufsichtsbehörde</strong>
+für den Datenschutz zu beschweren.</span></p>
+
+<p class=MsoNormal><span lang=DE>&nbsp;</span></p>
+
+<h2 style='margin-top:10.0pt'><span lang=DE>Änderung dieser Datenschutzhinweise</span></h2>
+
+<p class=MsoNormal style='margin-top:10.0pt'><span lang=DE>Wir überarbeiten
+diese Datenschutzhinweise bei Änderungen der Datenverarbeitung oder bei
+sonstigen Anlässen, die dies erforderlich machen. Die jeweils aktuelle Fassung
+finden Sie stets auf dieser Internetseite.</span></p>
+
+<p class=MsoNormal style='margin-top:10.0pt'><span lang=DE>Stand: 06.04.2020</span></p>
+
+</div>
+
+</body>
+
+</html>
